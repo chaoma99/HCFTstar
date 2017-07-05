@@ -1,4 +1,5 @@
-# Robust Object Tracking Via Hierarchical Convolutional Features
+# Robust Visual Tracking Via Hierarchical Convolutional Features
+
 ### Introduction
 
 This is the research code for an extended version of the ICCV2015 paper: 
@@ -14,7 +15,7 @@ these two types of proposals and respectively select the proposals with highest 
 
 The correlation filters with convolutional features is a state-of-the-art tracker that exploits rich feature hierarchy from deep convolutional neural networks for visual tracking. For more details, please visit our [Project page](https://sites.google.com/site/chaoma99/hcft-tracking).
 
-<img src="https://drive.google.com/uc?id=0B8-i_hZvGyZNMzFBb2RMWjJ0Z2s&amp;export=download" width="640" />
+<img src="https://drive.google.com/uc?id=0B8-i_hZvGyZNMzFBb2RMWjJ0Z2s&amp;export=download" width="720" />
 
 
 ### Citation
