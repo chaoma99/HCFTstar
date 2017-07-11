@@ -4,11 +4,8 @@
 
 This is the research code for an extended version of the ICCV2015 paper: 
 
-[Chao Ma](https://sites.google.com/site/chaoma99/), [Jia-Bin Huang](https://sites.google.com/site/jbhuang0604/), [Xiaokang Yang](http://english.seiee.sjtu.edu.cn/english/detail/842_802.htm) and [Ming-Hsuan Yang](http://faculty.ucmerced.edu/mhyang/), "Hierarchical Convolutional Features for Visual Tracking", ICCV 2015    
-- [PDF](https://uofi.box.com/shared/static/o8wkllte8sfyuvt8ei77o24we8l36qoj.pdf) 
-- [Supplementary material](https://uofi.box.com/shared/static/6y3izswn40y6ckbwgm40ugledzp8fer9.pdf)
+[Chao Ma](https://sites.google.com/site/chaoma99/), [Jia-Bin Huang](https://filebox.ece.vt.edu/~jbhuang/), [Xiaokang Yang](http://english.seiee.sjtu.edu.cn/english/detail/842_802.htm) and [Ming-Hsuan Yang](http://faculty.ucmerced.edu/mhyang/), "Hierarchical Convolutional Features for Visual Tracking", ICCV 2015    
 - [Project page](https://sites.google.com/site/jbhuang0604/publications/cf2)
-- [Result visualization](https://sites.google.com/site/jbhuang0604/publications/cf2/visualization)
 
 In this source code, we added the components for (i) scale estimation and (ii) target redetection from tracking failures caused by heavy occlusion or targets moving out of the view. We propose to use another correlation filter to maintain a long-term memory of target appearance as a classifier. By adjusting the parameters, we tailor the off-the-shelf EdgeBox toolbox to generate two types of region proposals: (i) proposals tightly around the estimated location as candidates for scale estimation; (ii) proposals sampled across the whole image as candidates for target re-detection. We apply the classifier to
 these two types of proposals and respectively select the proposals with highest response scores for scale estimation and target re-detection.
