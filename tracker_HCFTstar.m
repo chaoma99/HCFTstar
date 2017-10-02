@@ -102,7 +102,7 @@ for frame = 1:numel(img_files),
         response = fftshift(real(ifft2(scale_model.alphaf.*kzf)));
         motion_response = max(response(:));
         if  max_response< config.motion_thresh,
-               [patch1,~] = get_hog_subwindow((im),pos,window_sz); 
+               [patch1,~] = get_subwindow((im),pos,window_sz); 
                if size(patch1,1)>1&&size(patch1,2)>1
                    opts.minBoxArea= 0.8*target_sz(1)*target_sz(2);
                    opts.maxBoxArea=1.2*target_sz(1)*target_sz(2);

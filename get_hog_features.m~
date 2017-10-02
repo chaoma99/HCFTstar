@@ -1,15 +1,15 @@
-function x = get_hog_features(im, config, cos_window)
+function x = get_hog_features(im, cell_size, cos_window)
 %GET_FEATURES
 %   Extracts dense features from image.
 
     cell_size=config.features.cell_size;
-%     nwindow=config.features.window_size;
+    nwindow=config.features.window_size;
     nbins=config.features.nbins;
-    if size(im,3)>1
+      if size(im,3)>1
         im = rgb2gray(im);
     end  
     %HOG features, from Piotr's Toolbox
-    x = double(fhog(single(im) / 255, cell_size, nbins));
+    x = double(fhog(single(im) / 255, cell_size, config.features.hog_orientations));
     x(:,:,end) = [];  %remove all-zeros channel ("truncation feature")
 
 % %     % pixel intensity histogram, from Piotr's Toolbox

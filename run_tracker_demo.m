@@ -3,17 +3,18 @@
 function [precision, fps] = run_tracker_demo(video, show_visualization, show_plots)
 dbstop if error;
 %path to the videos (you'll be able to choose one with the GUI).
-base_path ='/home/chao/dataset/OTB/';
+base_path ='/data/OTB/';
 
 close all;
 addpath('utility','train');
 % result_path = 'results1/';
-if ~exist(result_path)
-    mkdir(result_path);
-end
+
 
 % Path to MatConvNet. Please run external/matconvnet/vl_compilenn.m to
 % set up the MatConvNet
+
+addpath '/home/chao/Dropbox/research/library/matconvnet/matlab'
+addpath '/home/chao/program/deepmodel/'
 
 vl_setupnn();
 addpath(genpath('edgesbox'));
@@ -44,20 +45,20 @@ global enableGPU;
 enableGPU = true;
 
 switch video
-    case 'choose',
+    case 'choose'
         % Ask the user for selecting the video, then call self with that video name.
       %  matlabpool open local 8;
         video = choose_video(base_path);
         if ~isempty(video)
             % Start tracking
-            [precision, fps] = run_tracker1(video, show_visualization, show_plots);
+            [precision, fps] = run_tracker_demo(video, show_visualization, show_plots);
             
-            if nargout == 0,  % Don't output precision as an argument
+            if nargout == 0  % Don't output precision as an argument
                 clear precision
             end
         end
         
-    case 'all',
+    case 'all'
         %all videos, call self with each video name.
         
         %only keep valid directory names
@@ -85,7 +86,7 @@ switch video
         poolobj=gcp('nocreate');
         parfor k = 1:numel(videos)
             %if exist([result_path videos{k} '.mat'],'file'), continue; end
-            [prec, all_fps(k)] = run_tracker1(videos{k}, show_visualization, show_plots);
+            [prec, all_fps(k)] = run_tracker_demo(videos{k}, show_visualization, show_plots);
             
             all_precisions(k) = prec;
         end
@@ -99,7 +100,7 @@ switch video
         
         fprintf('\nAverage precision (20px):% 1.3f, Average FPS:% 4.2f\n\n', mean_precision, fps)
         save([result_path  'average' '.mat'],'mean_precision');
-        if nargout > 0,
+        if nargout > 0
             precision = mean_precision;
         end
         
@@ -112,7 +113,7 @@ switch video
 %         [positions, time] = tracker_ensemble(video_path, img_files, pos, target_sz, ...
 %             padding, lambda, output_sigma_factor, interp_factor, ...
 %             cell_size, show_visualization);
-        [positions, time,rect_position] = tracker_CF_RP_train_new(video_path, img_files, pos, target_sz, ...
+        [positions, time,rect_position] = tracker_HCFTstar(video_path, img_files, pos, target_sz, ...
             padding, lambda, output_sigma_factor, interp_factor, ...
             cell_size, show_visualization,config); %tracker_ensemble_RPnew1 
         
@@ -126,12 +127,8 @@ switch video
 
         fprintf('%12s - Precision (20px):% 1.3f, FPS:% 4.2f\n', video, precisions(20), fps)
         precision=precisions(20);  
-%         if ~exist(result_path)
-%             mkdir(result_path);
-%         end
-%         save([result_path  video '-' 'CFRP_Scale' '.mat'],'results');
-%         save([result_path  video '-' 'CFRP_Scale_prec' '.mat'],'precision');
-        if nargout > 0,
+
+        if nargout > 0
             %return precisions at a 20 pixels threshold
             precision = precisions(20);
         end
