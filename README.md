@@ -18,12 +18,12 @@ The correlation filters with convolutional features is a state-of-the-art tracke
 
 If you find the code and dataset useful in your research, please consider citing:
 
-    @inproceedings{Ma-HCFTstar-2017,
+    @article{Ma-HCFTstar-2017,
         title={Robust Visual Tracking via Hierarchical Convolutional Features},
         Author = {Ma, Chao and Huang, Jia-Bin and Yang, Xiaokang and Yang, Ming-Hsuan},
-        booktitle = {arXiv prePreprint},
+        journal = {IEEE Transcations on Pattern Analysis and Machine Intelligence},
         pages={},
-        Year = {2017}
+        Year = {2018}
     }
 
 
