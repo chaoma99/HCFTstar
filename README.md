@@ -4,7 +4,7 @@
 
 This is the research code of our TPAMI 2018 paper, which is an extended version of our ICCV 2015 paper: 
 
-[Chao Ma](https://sites.google.com/site/chaoma99/), [Jia-Bin Huang](https://filebox.ece.vt.edu/~jbhuang/), [Xiaokang Yang](http://english.seiee.sjtu.edu.cn/english/detail/842_802.htm) and [Ming-Hsuan Yang](http://faculty.ucmerced.edu/mhyang/), "Hierarchical Convolutional Features for Visual Tracking", ICCV 2015. For the research code, please visit our [Project page](https://github.com/jbhuang0604/CF2).
+[Chao Ma](https://sites.google.com/site/chaoma99/), [Jia-Bin Huang](https://filebox.ece.vt.edu/~jbhuang/), [Xiaokang Yang](http://english.seiee.sjtu.edu.cn/english/detail/842_802.htm) and [Ming-Hsuan Yang](http://faculty.ucmerced.edu/mhyang/), "Hierarchical Convolutional Features for Visual Tracking", ICCV 2015. For the early conference version code, please visit our [Project page](https://github.com/jbhuang0604/CF2).
 
 In this source code, we added the components for (i) scale estimation and (ii) target redetection from tracking failures caused by heavy occlusion or targets moving out of the view. We propose to use another correlation filter to maintain a long-term memory of target appearance as a classifier. By adjusting the parameters, we tailor the off-the-shelf EdgeBox toolbox to generate two types of region proposals: (i) proposals tightly around the estimated location as candidates for scale estimation; (ii) proposals sampled across the whole image as candidates for target re-detection. We apply the classifier to
 these two types of proposals and respectively select the proposals with highest response scores for scale estimation and target re-detection.
