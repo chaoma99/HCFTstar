@@ -1,8 +1,8 @@
-# Robust Visual Tracking Via Hierarchical Convolutional Features
+# Robust Visual Tracking Via Hierarchical Convolutional Features -- TPAMI 2018
 
 ### Introduction
 
-This is the research code for an extended version of the ICCV2015 paper: 
+This is the research code of our TPAMI 2018 paper, which is an extended version of our ICCV 2015 paper: 
 
 [Chao Ma](https://sites.google.com/site/chaoma99/), [Jia-Bin Huang](https://filebox.ece.vt.edu/~jbhuang/), [Xiaokang Yang](http://english.seiee.sjtu.edu.cn/english/detail/842_802.htm) and [Ming-Hsuan Yang](http://faculty.ucmerced.edu/mhyang/), "Hierarchical Convolutional Features for Visual Tracking", ICCV 2015. For the research code, please visit our [Project page](https://github.com/jbhuang0604/CF2).
 
