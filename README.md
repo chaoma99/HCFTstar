@@ -23,7 +23,7 @@ The correlation filters with convolutional features is a state-of-the-art tracke
 
 2. run "run_tracker_demo.m"
 
-
+3. The code for visualising CNN layers is in the folder "visualization"
 
 ### Citation
 
