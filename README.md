@@ -1,5 +1,9 @@
 # Robust Visual Tracking Via Hierarchical Convolutional Features -- TPAMI 2018
 
+
+![](../master/flowchart.png)
+
+
 ### Introduction
 
 This is the research code of our TPAMI 2018 paper, which is an extended version of our ICCV 2015 paper: 
@@ -10,8 +14,6 @@ In this source code, we added the components for (i) scale estimation and (ii) t
 these two types of proposals and respectively select the proposals with highest response scores for scale estimation and target re-detection.
 
 The correlation filters with convolutional features is a state-of-the-art tracker that exploits rich feature hierarchy from deep convolutional neural networks for visual tracking. For more details, please visit our [Project page](https://sites.google.com/site/chaoma99/hcft-tracking).
-
-![](../master/flowchart.png)
 
 
 
