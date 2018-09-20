@@ -18,5 +18,5 @@ for ii = 1:size(bbs,1)
      if iou >=0.6 && iou<=0.9
          jj=jj+1;
          ind(jj)=ii;       
-        end
+     end
 end

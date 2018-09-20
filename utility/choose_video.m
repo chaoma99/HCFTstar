@@ -23,11 +23,11 @@ function video_name = choose_video(base_path)
 
 %===================================================================
 % uncomment following scripts if you test on the entire benchmark
-    names(strcmpi('Jogging', names)) = [];
-	names(end+1:end+2) = {'Jogging.1', 'Jogging.2'};
-	
-    names(strcmpi('Skating2', names)) = [];
-	names(end+1:end+2) = {'Skating2.1', 'Skating2.2'};
+%   names(strcmpi('Jogging', names)) = [];
+% 	names(end+1:end+2) = {'Jogging.1', 'Jogging.2'};
+% 	
+%   names(strcmpi('Skating2', names)) = [];
+% 	names(end+1:end+2) = {'Skating2.1', 'Skating2.2'};
 %===================================================================
 
 	%no sub-folders found

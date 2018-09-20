@@ -1,22 +1,44 @@
 
-%
+%   Robust Visual Tracking via Hierarchical Convolutional Features
+%   Chao Ma, Jia-Bin Huang, Xiaokang Yang, and Ming-Hsuan Yang
+%   IEEE Transactions on Pattern Analysis and Machine Intellegince
+
+
 function [precision, fps] = run_tracker_demo(video, show_visualization, show_plots)
+
+% run_HCFTstar_demo:
+% process a sequence using HCFTstar (Correlation filter tracking with convolutional features)
+%
+% Input:
+%     - video:        sequence name
+%     - show_visualization:   whether to show results
+%     - show_plots: whether to show tracking precision
+% Output:
+%     - precision: tracking results with bounding boxes over time
+%     - fps: tracking results with FPS
+%
+%   It is provided for educational/researrch purpose only.
+%   If you find the software useful, please consider cite our paper.
+
+
+
 dbstop if error;
-%path to the videos (you'll be able to choose one with the GUI).
-base_path ='/data/OTB/';
+
+%path to the OTB videos (you'll be able to choose one with the GUI).
+base_path ='./OTB_dataset';
 
 close all;
 addpath('utility','train');
-% result_path = 'results1/';
-
 
 % Path to MatConvNet. Please run external/matconvnet/vl_compilenn.m to
 % set up the MatConvNet
 
-addpath '/home/chao/Dropbox/research/library/matconvnet/matlab'
+addpath '/data/Dropbox/research/library/matconvnet/matlab'
+vl_setupnn();
+
+% Where the 'imagenet-vgg-verydeep-19.mat' file is
 addpath '/home/chao/program/deepmodel/'
 
-vl_setupnn();
 addpath(genpath('edgesbox'));
 addpath(genpath('piotr_toolbox'));
 addpath(genpath('Diagnose'))
@@ -72,11 +94,11 @@ switch video
         
         %=========================================================================
         % Uncomment following scripts if you test on the entire bechmark
-                videos(strcmpi('Jogging', videos)) = [];
-                videos(end+1:end+2) = {'Jogging.1', 'Jogging.2'};
+%                 videos(strcmpi('Jogging', videos)) = [];
+%                 videos(end+1:end+2) = {'Jogging.1', 'Jogging.2'};
         %
-                videos(strcmpi('Skating2', videos))=[];
-                videos(end+1:end+2)={'Skating2.1', 'Skating2.2'};
+%                 videos(strcmpi('Skating2', videos))=[];
+%                 videos(end+1:end+2)={'Skating2.1', 'Skating2.2'};
         %=========================================================================
         
         all_precisions = zeros(numel(videos),1);  % to compute averages
