@@ -1,7 +1,7 @@
 # Robust Visual Tracking Via Hierarchical Convolutional Features -- TPAMI 2018
 
 
-![](../master/flowchart.png){:width="80%" .center-image}
+![](../master/flowchart.png | width=80%)
 
 
 ### Introduction
