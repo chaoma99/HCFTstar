@@ -19,13 +19,11 @@ The correlation filters with convolutional features is a state-of-the-art tracke
 
 ### Start
 
-1. Setup matconvet (recompile it if it is not comptiable with your machine) 
+1. Setup matconvet 
+2. cd run vgg_model the VGG-19 model "imagenet-vgg-verydeep-19.mat" 
+2. run "run_tracker_demo.m"
 
-2. cd vgg_model and run download.sh to download the VGG-19 model "imagenet-vgg-verydeep-19.mat" 
-
-3. run "run_tracker_demo.m"
-
-Note that the code for visualising CNN layers is in the folder "visualization"
+3. The code for visualising CNN layers is in the folder "visualization"
 
 ### Citation
 
@@ -38,6 +36,7 @@ If you find the code and dataset useful in your research, please consider citing
         pages={},
         Year = {2018}
     }
+
 
     @inproceedings{Ma-ICCV-2015,
         title={Hierarchical Convolutional Features for Visual Tracking},

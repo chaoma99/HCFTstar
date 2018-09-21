@@ -28,16 +28,17 @@ dbstop if error;
 base_path ='./OTB_dataset';
 
 close all;
+
 addpath('utility','train');
 
 % Path to MatConvNet. Please run external/matconvnet/vl_compilenn.m to
 % set up the MatConvNet
 
-addpath '/data/Dropbox/research/library/matconvnet/matlab'
+addpath './matconvnet/matlab'
 vl_setupnn();
 
 % Where the 'imagenet-vgg-verydeep-19.mat' file is
-addpath '/home/chao/program/deepmodel/'
+addpath './vgg_model'
 
 addpath(genpath('edgesbox'));
 addpath(genpath('piotr_toolbox'));
