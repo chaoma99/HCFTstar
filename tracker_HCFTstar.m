@@ -101,8 +101,8 @@ for frame = 1:numel(img_files),
         kzf=gaussian_correlation(zf, scale_model.xf, config.kernel_sigma);
         response = fftshift(real(ifft2(scale_model.alphaf.*kzf)));
         motion_response = max(response(:));
-        if  max_response< config.motion_thresh,
-               [patch1,~] = get_subwindow((im),pos,window_sz); 
+        if  max_response< config.motion_thresh
+               patch1 = get_subwindow(im,pos,window_sz); 
                if size(patch1,1)>1&&size(patch1,2)>1
                    opts.minBoxArea= 0.8*target_sz(1)*target_sz(2);
                    opts.maxBoxArea=1.2*target_sz(1)*target_sz(2);
@@ -119,7 +119,7 @@ for frame = 1:numel(img_files),
         else
             win_sz = floor(1.4*current_target_sz);
             patch1 = get_subwindow(im,pos,win_sz);
-            if size(patch1,3)<2     patch1 = cat(3,patch1,patch1,patch1);   end
+            if size(patch1,3)<2, patch1 = cat(3,patch1,patch1,patch1);   end
             opts1.minBoxArea = 0.3*current_target_sz(1)*current_target_sz(2);                            
             opts1.maxAspectRatio = 1.5*max(current_target_sz(1)/current_target_sz(2), current_target_sz(2)/current_target_sz(1));
             bbs = edgeBoxes(patch1,model,opts1);
