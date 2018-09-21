@@ -23,15 +23,7 @@ function x = get_hog_features(im, config, cos_window)
 %     h2=h2(cell_size:cell_size:end,cell_size:cell_size:end,:);
 % 
 %     x=cat(3,x,h1,h2);
-%% color feature
-%        w2c = config.w2c;
-%         sz = size(x);
-% 		im_patch = imresize(im, [sz(1) sz(2)]);
-% 		out_npca = get_feature_map(im_patch, 'gray', w2c);
-% 		out_pca = get_feature_map(im_patch, 'cn', w2c);
-% % 		out_pca = reshape(temp_pca, [prod(sz), size(temp_pca, 3)]);
-% 		x = cat(3,x,out_npca);
-% 		x=cat(3,x,out_pca);
+
 	%process with cosine window if needed
 	if ~isempty(cos_window),
 		x = bsxfun(@times, x, cos_window);

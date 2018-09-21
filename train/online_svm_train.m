@@ -1,5 +1,4 @@
 function svm_model = online_svm_train(im,pos,window_sz,target_sz,opts,model)    
-          %addpath(genpath('/home/carrierlxk/tracking_algorithm/Diagnose/'));
           %% train svm model using proposals comes from first frame
           [patch,~] = my_get_subwindow(im, pos, window_sz);
             if size(patch,3)<2
