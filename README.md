@@ -6,7 +6,11 @@
 
 ### Introduction
 
-This is the research code of our TPAMI 2018 paper, which is an extended version of our ICCV 2015 paper: 
+This is the research code of the TPAMI 2018 paper:
+
+[Chao Ma](https://sites.google.com/site/chaoma99/), [Jia-Bin Huang](https://filebox.ece.vt.edu/~jbhuang/), [Xiaokang Yang](http://english.seiee.sjtu.edu.cn/english/detail/842_802.htm) and [Ming-Hsuan Yang](http://faculty.ucmerced.edu/mhyang/), "Robust Visual Tracking via Hierarchical Convolutional Features", IEEE Transactions on Pattern Recognition and Machine Intelligence (TPAMI), 2018. 
+
+This work is the extended version of the ICCV 2015 paper: 
 
 [Chao Ma](https://sites.google.com/site/chaoma99/), [Jia-Bin Huang](https://filebox.ece.vt.edu/~jbhuang/), [Xiaokang Yang](http://english.seiee.sjtu.edu.cn/english/detail/842_802.htm) and [Ming-Hsuan Yang](http://faculty.ucmerced.edu/mhyang/), "Hierarchical Convolutional Features for Visual Tracking", ICCV 2015. For the early conference version code, please visit our [Project page](https://github.com/jbhuang0604/CF2).
 
