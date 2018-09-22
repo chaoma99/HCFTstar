@@ -8,7 +8,7 @@
 
 This is the research code of the TPAMI 2018 paper:
 
-[Chao Ma](https://sites.google.com/site/chaoma99/), [Jia-Bin Huang](https://filebox.ece.vt.edu/~jbhuang/), [Xiaokang Yang](http://english.seiee.sjtu.edu.cn/english/detail/842_802.htm) and [Ming-Hsuan Yang](http://faculty.ucmerced.edu/mhyang/), "Robust Visual Tracking via Hierarchical Convolutional Features", IEEE Transactions on Pattern Recognition and Machine Intelligence (TPAMI), 2018. 
+[Chao Ma](https://sites.google.com/site/chaoma99/), [Jia-Bin Huang](https://filebox.ece.vt.edu/~jbhuang/), [Xiaokang Yang](http://english.seiee.sjtu.edu.cn/english/detail/842_802.htm) and [Ming-Hsuan Yang](http://faculty.ucmerced.edu/mhyang/), "Robust Visual Tracking via Hierarchical Convolutional Features", IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2018. 
 
 This work is the extended version of the ICCV 2015 paper: 
 
@@ -55,7 +55,7 @@ If you find the code and dataset useful in your research, please consider citing
 |  Folder    | description |
 | ---|---|
 
-Feedbacks and comments are welcome! Feel free to contact us via [chaoma99@gmail.com](mailto:chaoma99@gmail.com) or [jbhuang1@illinois.edu](mailto:jbhuang1@illinois.edu).
+Feedbacks and comments are welcome! Feel free to contact us via [chaoma99@gmail.com](mailto:chaoma99@gmail.com) or [jbhuang@vt.edu](mailto:jbhuang@vt.edu).
 
 Enjoy!
 
