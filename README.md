@@ -18,7 +18,7 @@ This work is the extended version of the ICCV 2015 paper:
 In this source code, we added the components for (i) scale estimation and (ii) target redetection from tracking failures caused by heavy occlusion or targets moving out of the view. We propose to use another correlation filter to maintain a long-term memory of target appearance as a classifier. By adjusting the parameters, we tailor the off-the-shelf EdgeBox toolbox to generate two types of region proposals: (i) proposals tightly around the estimated location as candidates for scale estimation; (ii) proposals sampled across the whole image as candidates for target re-detection. We apply the classifier to
 these two types of proposals and respectively select the proposals with highest response scores for scale estimation and target re-detection.
 
-The correlation filters with convolutional features is a state-of-the-art tracker that exploits rich feature hierarchy from deep convolutional neural networks for visual tracking. For more details, please visit our [Project page](https://sites.google.com/site/chaoma99/hcft-tracking).
+The correlation filters with convolutional features is a state-of-the-art tracker that exploits rich feature hierarchy from deep convolutional neural networks for visual tracking. For more details, please visit our [Project page](https://www.chaoma.info/hcft-tracking).
 
 
 
