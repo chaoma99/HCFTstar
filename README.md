@@ -3,9 +3,9 @@
 
 ### Introduction
 
-This is the research code of the TPAMI 2018 paper:
+This is the research code of the TPAMI 2019 paper:
 
-[Chao Ma](https://www.chaoma.info), [Jia-Bin Huang](https://filebox.ece.vt.edu/~jbhuang/), [Xiaokang Yang](http://english.seiee.sjtu.edu.cn/english/detail/842_802.htm) and [Ming-Hsuan Yang](http://faculty.ucmerced.edu/mhyang/), "Robust Visual Tracking via Hierarchical Convolutional Features", IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2018. 
+[Chao Ma](https://www.chaoma.info), [Jia-Bin Huang](https://filebox.ece.vt.edu/~jbhuang/), [Xiaokang Yang](http://english.seiee.sjtu.edu.cn/english/detail/842_802.htm) and [Ming-Hsuan Yang](http://faculty.ucmerced.edu/mhyang/), "Robust Visual Tracking via Hierarchical Convolutional Features", IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), 2019. 
 
 
 ![](../master/flowchart.png)
@@ -37,11 +37,13 @@ Note that the code for visualising CNN layers is in the folder "visualization"
 If you find the code and dataset useful in your research, please consider citing:
 
     @article{Ma-HCFTstar-2017,
-        title={Robust Visual Tracking via Hierarchical Convolutional Features},
-        Author = {Ma, Chao and Huang, Jia-Bin and Yang, Xiaokang and Yang, Ming-Hsuan},
-        journal = {IEEE Transcations on Pattern Analysis and Machine Intelligence},
-        pages={},
-        Year = {2018}
+      title={Robust visual tracking via hierarchical convolutional features},
+      author={Ma, Chao and Huang, Jia-Bin and Yang, Xiaokang and Yang, Ming-Hsuan},
+      journal={IEEE transactions on pattern analysis and machine intelligence},
+      volume={41},
+      number={11},
+      pages={2709--2723},
+      year={2019}
     }
 
     @inproceedings{Ma-ICCV-2015,
